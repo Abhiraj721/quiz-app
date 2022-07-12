@@ -244,7 +244,7 @@ function final(){
     }
     else if(result<=7){
         var accu=result*100/10;
-        q.innerHTML+="<h5 class='ex'> Woah Good :)</h2><br>"+
+        q.innerHTML+="<br><br><h5 class='ex'> Woah Good :)</h2><br>"+
         "<button class='btn btn-outline-danger' onClick='end()'>Try Again</button><br>"+
         "<h2>Your accuracy is "+accu+" %"+"<br>"
     }
