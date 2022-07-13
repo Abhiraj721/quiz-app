@@ -235,7 +235,7 @@ function final(){
        
   }
     document.querySelector(".main").style.backgroundColor="white"
-    document.querySelector(".main").style.color="black";
+    document.querySelector(".main").style.color="white";
 }
 function end(){
     location.reload();
