@@ -1,5 +1,4 @@
-
-
+let visi=0;
 let count = 0;
 var result = 0;
 var chg2 = 0;
@@ -24,7 +23,7 @@ document.querySelector(".start").addEventListener("click", function () {
         if (this.innerHTML == "(C) Both (A) and (B)" && result == 0) {
           result++;
           q2();
-          console.log("you are right" + result);
+
         } else {
           console.log("there was an error");
         }
@@ -47,10 +46,7 @@ function q2() {
       if (this.innerHTML == "(C) A program") {
         result++;
         q3();
-        console.log("you are right" + result);
-      } else {
-        console.log("there was an error");
-      }
+      } 
     });
 }
 function q3() {
@@ -69,10 +65,7 @@ function q3() {
       if (this.innerHTML == "(B) Syntax errors") {
         result++;
         q4();
-        console.log("you are right" + result);
-      } else {
-        console.log("there was an error");
-      }
+      } 
     });
 }
 function q4() {
@@ -93,10 +86,7 @@ function q4() {
       ) {
         result++;
         q5();
-        console.log("you are right" + result);
-      } else {
-        console.log("there was an error");
-      }
+      } 
     });
 }
 function q5() {
@@ -115,10 +105,7 @@ function q5() {
       if (this.innerHTML == "(C) Both (A) and (B)") {
         result++;
         q6();
-        console.log("you are right" + result);
-      } else {
-        console.log("there was an error");
-      }
+      } 
     });
 }
 function q6() {
@@ -137,10 +124,7 @@ function q6() {
       if (this.innerHTML == "(D) None of the above") {
         result++;
         q7();
-        console.log("you are right" + result);
-      } else {
-        console.log("there was an error");
-      }
+      } 
     });
 }
 function q7() {
@@ -159,10 +143,7 @@ function q7() {
       if (this.innerHTML == "(A) An operation code") {
         result++;
         q8();
-        console.log("you are right" + result);
-      } else {
-        console.log("there was an error");
-      }
+      } 
     });
 }
 function q8() {
@@ -181,10 +162,7 @@ function q8() {
       if (this.innerHTML == "(A) Syntax errors") {
         result++;
         q9();
-        console.log("you are right" + result);
-      } else {
-        console.log("there was an error");
-      }
+      } 
     });
 }
 function q9() {
@@ -203,10 +181,7 @@ function q9() {
       if (this.innerHTML == "(C) One-one") {
         result++;
         q10();
-        console.log("you are right" + result);
-      } else {
-        console.log("there was an error");
-      }
+      } 
     });
 }
 function q10() {
@@ -225,37 +200,50 @@ function q10() {
       if (this.innerHTML == "(A) Compiler") {
         result++;
         final();
-        console.log("you are right" + result);
-      } else {
-        console.log("there was an error");
-      }
+      } 
     });
 }
 
 
 function final(){
-    q.innerHTML="<h2 class='res'>Your score is"+result+"/10</h2>"+
-    "<br><br>"
+    q.innerHTML="<br><br><br><h2 class='res' style='background-color:black; display:inline;'>Your score is "+result+"/10</h2><br>"+
+    "<br>"
     if(result<=4){
         var accu=result*100/10;
         q.innerHTML+="<h5 class='ex'>You can do much better :)</h5><br><br><br>"+
-        "<button class='btn btn-outline-danger' onClick='end()'>Try Again</button><br><br><br>"+
-        "<h2>Your accuracy is "+accu+" %"
+        "<button class='btn btn-outline-danger' onClick='end()'>Try Again</button><br>"+
+        "<br><br><button class='btn btn-outline-light' onClick='ans()'>Check answers</button><br><br>"+
+        "<h2 style='background-color:black; display:inline;'>Your accuracy is "+accu+" %"
+     
     }
     else if(result<=7){
         var accu=result*100/10;
         q.innerHTML+="<br><br><h5 class='ex'> Woah Good :)</h2><br>"+
-        "<button class='btn btn-outline-danger' onClick='end()'>Try Again</button><br>"+
-        "<h2>Your accuracy is "+accu+" %"+"<br>"
+        "<br><button class='btn btn-outline-danger' onClick='end()'>Try Again</button><br>"+
+        "<br><br><button class='btn btn-outline-light' onClick='ans()'>Check answers</button><br><br>"+
+        "<h2 style='background-color:black; display:inline;'>Your accuracy is "+accu+" %"+"<br>"
+       
     }
 
     else{
         var accu=result*100/10;
-        q.innerHTML+="<h5 class='ex'> Exellent :)</h2>"+
-        "<button class='btn btn-outline-danger' onClick='end()'>Try Again</button>"+
-        "<h2>Your accuracy is "+accu+" %"
-    }
+        q.innerHTML+="<h5 class='ex'> Exellent :)</h2><br><br>"+
+        "<button class='btn btn-outline-danger' onClick='end()'>Try Again</button><br>"+
+   
+   "<br><br><button class='btn btn-outline-light' onClick='ans()'>Check answers</button><br><br>"+    
+   "<h2 style='background-color:black; display:inline;'>Your accuracy is "+accu+" %"
+       
+  }
+    document.querySelector(".main").style.backgroundColor="white"
+    document.querySelector(".main").style.color="black";
 }
 function end(){
     location.reload();
+}
+function ans(){
+  if(visi==0){
+  q.innerHTML+="<br><br><h4>Answers</h4>"+
+  "<p class='container' style=' font-size:20px';>1-C <span class='non'>non</span>  2-C <span class='non'>non</span>  3-B <span class='non'>non</span>  4-B  <span class='non'>non</span> 5-C <span class='non'>non</span>  6-D  <span class='non'>non</span> 7-A <span class='non'>non</span>  8-A <span class='non'>non</span>  9-C <span class='non'>non</span>  10-1</p>"
+  }
+  visi++;
 }

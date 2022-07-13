@@ -5,7 +5,7 @@ body{
     /*overflow-x: 10%;*/
     margin: 0px;
     position:relative;
-    height: 950px;
+    height: 890px;
       
     /* background-attachment: fixed; */
     background-position: center center;
@@ -18,8 +18,7 @@ body{
          visibility: hidden;
      }
      .main{
-         background-color: black;
-         opacity: 0.93;
+       backdrop-filter: blur(10px);
          height: 600px;
          width: 100%;
      }
@@ -35,9 +34,25 @@ body{
      .col-lg-6{
          padding: 10px;
      }
+     footer{
+         height: 45px;
+         width: 100%;
+         position: relative;
+         top: 90px;
+     }
+     .nav{
+         margin: 0px;
+         backdrop-filter:blur(79px);
+         height: 43px;
+         color:rgb(245, 238, 238);
+         align-items: center;
+         justify-content: center;
+         font-family: monospace;
+         width: 100%;
+     }
    
      .ex{
-         background-color: antiquewhite;
+         background-color: rgb(7, 7, 6);
          color: black;
          display: inline;
      }
