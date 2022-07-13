@@ -234,8 +234,7 @@ function final(){
    "<h2 style='background-color:black; display:inline;'>Your accuracy is "+accu+" %"
        
   }
-    document.querySelector(".main").style.backgroundColor="white"
-    document.querySelector(".main").style.color="white";
+   
 }
 function end(){
     location.reload();
