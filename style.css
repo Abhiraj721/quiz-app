@@ -1,58 +1,28 @@
-body{
- 
-    background-repeat: no-repeat;
-    background-size:cover;
-    /*overflow-x: 10%;*/
-    margin: 0px;
-    position:relative;
-    height: 890px;
-      
-    /* background-attachment: fixed; */
-    background-position: center center;
-   color: white;
-   align-items: center;
-   text-align: center;
-   /* height: 1300px; */
-     }
-     .non{
-         visibility: hidden;
-     }
-     .main{
-       backdrop-filter: blur(10px);
-         height: 600px;
-         width: 100%;
-     }
-     .headstart{
-         color:aliceblue;
-         font-family:Georgia, 'Times New Roman', Times, serif;
-         font-size: 33px;
-     }
-     .question{
-         font-size: 29px;
-         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     }
-     .col-lg-6{
-         padding: 10px;
-     }
-     footer{
-         height: 45px;
-         width: 100%;
-         position: relative;
-         top: 90px;
-     }
-     .nav{
-         margin: 0px;
-         backdrop-filter:blur(79px);
-         height: 43px;
-         color:rgb(245, 238, 238);
-         align-items: center;
-         justify-content: center;
-         font-family: monospace;
-         width: 100%;
-     }
-   
-     .ex{
-         background-color: rgb(7, 7, 6);
-         color: rgb(253, 253, 253);
-         display: inline;
-     }
+
+    body{
+ background: url("img.png");
+        background-repeat: no-repeat;
+        background-size:cover;
+        /*overflow-x: 10%;*/
+        margin: 0px;
+        position: relative;
+        height: 711px;  
+        /* background-attachment: fixed; */
+        background-position: center center;
+       color: white;
+       align-items: center;
+       text-align: center;
+        height: 900px; 
+         }
+.inputdate{
+    height: 100px;
+    width: 124px;
+    font-family:cursive;
+    border-color: rgb(168, 245, 219);
+    border-radius: 12%;
+    background: transparent;
+    backdrop-filter: blur(343px);
+}
+.output{
+    font-family: 'Lexend Deca', sans-serif;
+}
